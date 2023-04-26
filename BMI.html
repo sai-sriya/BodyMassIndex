@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="BMI.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h1>BMI Calculator</h1>
+      <div class="container">
+        <div id="height">
+          <div id="a">Height</div>
+          <input id="input-height" type="text" placeholder="enter height " />
+          <div id="height_error">*/Please enter a valid height*/</div>
+        </div>
+        <div id="weight">
+          <div id="b">Weight</div>
+          <input
+            id="input-weight"
+            type="text"
+            placeholder="enter weight in kg "
+          />
+          <div id="weight_error">*/Please enter a valid weight*/</div>
+        </div>
+        <div id="unit">
+          <div id="c">Unit</div>
+          <input id="input-unit" type="text" placeholder="cm / m / ft" />
+          <div id="unit_error">*/Please enter a valid unit*/</div>
+        </div>
+        <div>
+          <button id="button" type="submit" onclick="calculator()">
+            Calculate
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="BMI.js"></script>
+  </body>
+</html>
